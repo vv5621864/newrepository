@@ -1,0 +1,34 @@
+A:-
+To take many input and convert to one string and another int array:
+name, *data=input().split()
+score=list(map(int,data))
+stData[name]=score
+------------------------------------------------------------------
+B:-
+To limit 3 digit after decimal number:
+print("%.3f"%x)
+------------------------------------------------------------------
+C:-
+To convert list to string:
+s=''.join(l)
+------------------------------------------------------------------
+D:-
+To convert string to list:
+l=s.split(' ')
+------------------------------------------------------------------
+E:-
+TEXTWRAP:
+s='abcdefghijklmnopq'
+x=textwrap.fill(s,4)
+o/p of x:
+abcd
+efgh
+ijkl
+mnop
+q
+------------------------------------------------------------------
+F:-
+To give fix space to word
+ljust,rjust,center:left string adjust
+x=s.ljust(20,'-')
+------------------------------------------------------------------
