@@ -32,3 +32,32 @@ To give fix space to word
 ljust,rjust,center:left string adjust
 x=s.ljust(20,'-')
 ------------------------------------------------------------------
+Cartesian Product of list:
+from itertools iimport product
+1.
+a=[1,2,3]
+b=[5,6]
+l=list(product(a,b))
+2.
+a=[[1,2,3] , [4,5], [7,8]]
+l=list(product(*a))
+-------------------------------------------------------------------
+Permutation:
+from itertools import permutations
+a=[1,2,3]
+b=['1','2','3']
+c='123'
+print(list(permutations(a,3)))
+print(list(permutations(b,3)))
+print(list(permutations(c,3)))
+o/p:
+[(1, 2, 3), (1, 3, 2), (2, 1, 3), (2, 3, 1), (3, 1, 2), (3, 2, 1)]
+[('1', '2', '3'), ('1', '3', '2'), ('2', '1', '3'), ('2', '3', '1'), ('3', '1', '2'), ('3', '2', '1')]
+[('1', '2', '3'), ('1', '3', '2'), ('2', '1', '3'), ('2', '3', '1'), ('3', '1', '2'), ('3', '2', '1')]
+---------------------------------------------------------------------------------------------------------
+Combination:
+from itertools import combinations
+a=[1,2,3]
+print(list(permutations(a,2)))
+o/p:
+[(1,2),(1,3),(2,3)]
